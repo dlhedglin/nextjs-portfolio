@@ -13,7 +13,7 @@ function Hero({}: Props) {
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center">
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center z-20">
       <div className="realative h-32 w-32 mx-auto object-cover">
         <Image
           src={heroPic}
@@ -23,15 +23,17 @@ function Hero({}: Props) {
           className={"rounded-full"}
         />
       </div>
-      <h1 className="text-5xl font-semibold px-10">Devan Hedglin</h1>
-      <h2 className="text-gray-500 text-md uppercases tracking-[10px]">
+      <h1 className="text-4xl lg:text-6xl font-semibold px-10">
+        Devan Hedglin
+      </h1>
+      <h2 className="text-gray-500 text-xl uppercases tracking-[10px]">
         DevOps/Cloud Engineer
       </h2>
-      <h1 className="text-green-500">
+      {/* <h1 className="text-green-500">
         user@devanh.com:~$
         <span className="text-white">{text}</span>
         <Cursor cursorColor="#FFFFFF" cursorStyle="|" />
-      </h1>
+      </h1> */}
     </div>
   );
 }

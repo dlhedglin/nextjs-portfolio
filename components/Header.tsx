@@ -7,10 +7,10 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="sticky top-0 flex items-start justify-between z-20 p-5 max-w-7xl mx-auto">
+    <header className="sticky flex flex-row top-0 z-20 w-full">
       <motion.div
         initial={{
-          x: -500,
+          x: -1000,
           opacity: 0,
           scale: 0.5,
         }}
@@ -22,39 +22,39 @@ function Header({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center"
+        className="flex w-full p-2 items-center text-white justify-center"
       >
-        <button className="headerButton">Home</button>
-        <button className="headerButton">Resume</button>
-        <button className="headerButton">Projects</button>
-        {/* <Link href={{}}>Home</Link>
-        <Link href={{}}>Resume</Link>
-        <Link href={{}}>Projects</Link> */}
-      </motion.div>
-      <motion.div
-        initial={{
-          x: 500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{
-          duration: 1.5,
-        }}
-        className="flex flex-row items-center cursor-pointer"
-      >
+        <Link
+          href="#hero"
+          className="text-lg bold uppercase p-2 hover:text-gray-500"
+        >
+          Home
+        </Link>
+        <Link
+          href="#resume"
+          className="text-lg bold uppercase p-2 hover:text-gray-500"
+        >
+          Resume
+        </Link>
+        <Link
+          href="#projects"
+          className="text-lg bold uppercase p-2 hover:text-gray-500"
+        >
+          Projects
+        </Link>
+        <SocialIcon
+          url="https://www.github.com/dlhedglin/"
+          fgColor="white"
+          bgColor="transparent"
+        />
         <SocialIcon
           url="https://www.linkedin.com/in/dlhedglin/"
-          fgColor="gray"
+          fgColor="white"
           bgColor="transparent"
         />
         <SocialIcon
           url="devan.hedglin@gmail.com"
-          fgColor="gray"
+          fgColor="white"
           bgColor="transparent"
           network="email"
         />

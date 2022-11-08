@@ -18,8 +18,10 @@
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-particles": "^2.5.1",
     "react-simple-typewriter": "^4.0.5",
     "react-social-icons": "^5.15.0",
+    "tsparticles": "^2.5.1",
     "typescript": "4.8.4"
   },
   "devDependencies": {

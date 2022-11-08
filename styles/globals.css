@@ -4,6 +4,14 @@
 
 @layer components {
     .headerButton {
-        @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all hover:border-green-500/40 hover:text-green-500/40
+        @apply px-6 py-2 border border-[#51557E] rounded-full uppercase text-sm tracking-widest text-white transition-all hover:border-gray-500/40 hover:text-gray-500/40
     }
+    .headerButton2 {
+        @apply bg-gray-300 hover:bg-gray-400 text-[#1B2430] font-bold py-2 px-4
+    }
+}
+
+.particle {
+    z-index: -1;
+    position: fixed
 }
