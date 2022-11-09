@@ -26,7 +26,8 @@ const Particle = () => {
       loaded={particlesLoaded}
       options={{
         background: {
-          color: "1B2430",
+          // color: "0F1922",
+          color: "#0a192f",
         },
         fpsLimit: 120,
         interactivity: {

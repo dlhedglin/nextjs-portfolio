@@ -2,6 +2,7 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Image from "next/image";
 import heroPic from "../public/hero.jpg";
+import { SocialIcon } from "react-social-icons";
 
 type Props = {};
 
@@ -13,22 +14,30 @@ function Hero({}: Props) {
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center z-20">
-      <div className="realative h-32 w-32 mx-auto object-cover">
-        <Image
-          src={heroPic}
-          alt="image"
-          width={500}
-          height={500}
-          className={"rounded-full"}
-        />
-      </div>
-      <h1 className="text-4xl lg:text-6xl font-semibold px-10">
-        Devan Hedglin
-      </h1>
-      <h2 className="text-gray-500 text-xl uppercases tracking-[10px]">
+    <div className="h-screen flex flex-col space-y-8 items-start justify-center z-20 px-10 sm:px-28 md:px-48 lg:px-96">
+      <h2 className="customGreen text-lg sm:text-2xl">Hello, Im</h2>
+      <h2 className="text-4xl lg:text-6xl font-semibold ">Devan Hedglin</h2>
+      <h2 className="text-gray-400 text-lg sm:text-2xl uppercases tracking-[10px]">
         DevOps/Cloud Engineer
       </h2>
+      <div>
+        <SocialIcon
+          url="https://www.github.com/dlhedglin/"
+          fgColor="gray"
+          bgColor="transparent"
+        />
+        <SocialIcon
+          url="https://www.linkedin.com/in/dlhedglin/"
+          fgColor="gray"
+          bgColor="transparent"
+        />
+        <SocialIcon
+          url="devan.hedglin@gmail.com"
+          fgColor="gray"
+          bgColor="transparent"
+          network="email"
+        />
+      </div>
       {/* <h1 className="text-green-500">
         user@devanh.com:~$
         <span className="text-white">{text}</span>

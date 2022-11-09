@@ -1,11 +1,8 @@
 import Head from "next/head";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
 import Particle from "../components/Particle";
-import Projects from "../components/Projects";
-import About from "../components/About";
-
-export default function Home() {
+import ResumeProp from "../components/Resume";
+export default function Resume() {
   return (
     <div className="text-white h-screen overflow-y-auto snap-y snap-mandatory z-5 flex flex-col scroll-smooth">
       <div className="particle overflow-y-hidden">
@@ -19,15 +16,8 @@ export default function Home() {
         </style>
       </Head>
       <Header />
-      {/* <Nav /> */}
-      <section id="hero" className="snap-start">
-        <Hero />
-      </section>
-      <section id="about" className="snap-center">
-        <About />
-      </section>
-      <section id="projects" className="snap-center">
-        <Projects />
+      <section id="resume" className="snap-start">
+        <ResumeProp />
       </section>
     </div>
   );

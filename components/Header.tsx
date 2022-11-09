@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
 type Props = {};
@@ -22,42 +21,20 @@ function Header({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex w-full p-2 items-center text-white justify-center"
+        className="flex w-full p-2 sm:p-5 items-center text-gray-400 justify-end"
       >
-        <Link
-          href="#hero"
-          className="text-lg bold uppercase p-2 hover:text-gray-500"
-        >
-          Home
+        <Link scroll={false} href="/#hero" className="navButton">
+          <span className="customGreen">0. </span>Home
         </Link>
-        <Link
-          href="#resume"
-          className="text-lg bold uppercase p-2 hover:text-gray-500"
-        >
-          Resume
+        <Link scroll={false} href="/#about" className="navButton">
+          <span className="customGreen">01. </span>About
         </Link>
-        <Link
-          href="#projects"
-          className="text-lg bold uppercase p-2 hover:text-gray-500"
-        >
-          Projects
+        <Link scroll={false} href="/#projects" className="navButton">
+          <span className="customGreen">02. </span>Projects
         </Link>
-        <SocialIcon
-          url="https://www.github.com/dlhedglin/"
-          fgColor="white"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/in/dlhedglin/"
-          fgColor="white"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="devan.hedglin@gmail.com"
-          fgColor="white"
-          bgColor="transparent"
-          network="email"
-        />
+        <Link scroll={false} href="/resume" className="navButton">
+          <span className="customGreen">03. </span>resume
+        </Link>
       </motion.div>
     </header>
   );
