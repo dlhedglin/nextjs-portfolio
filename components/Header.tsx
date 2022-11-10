@@ -6,7 +6,7 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="sticky flex flex-row top-0 z-20 w-full">
+    <header className="sticky flex flex-row top-0 z-20 w-full backdrop-blur-sm">
       <motion.div
         initial={{
           x: -1000,
@@ -21,7 +21,7 @@ function Header({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex w-full p-2 sm:p-5 items-center text-gray-400 justify-end"
+        className="flex w-full p-2 sm:p-5 items-center text-gray-300 justify-end"
       >
         <Link scroll={false} href="/#hero" className="navButton">
           <span className="customGreen">0. </span>Home

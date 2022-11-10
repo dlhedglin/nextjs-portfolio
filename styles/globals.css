@@ -17,6 +17,12 @@
     .navButton {
         @apply text-sm px-2 md:px-5 font-semibold uppercase hover:customGreen hover:underline focus:underline
     }
+    .projectButton {
+        @apply text-gray-300 hover:text-[#64FFDA] hover:underline border-2 border-[#64FFDA] text-center p-2 text-sm sm:text-lg hover:shadow-black hover:shadow-lg
+    }
+    .projectTag {
+        @apply text-[#64FFDA] hover:underline text-center text-base underline-offset-4 underline shadow-md shadow-black
+    }
 }
 
 .particle {
