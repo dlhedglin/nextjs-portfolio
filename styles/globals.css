@@ -18,10 +18,10 @@
         @apply text-sm px-2 md:px-5 font-semibold uppercase hover:customGreen hover:underline focus:underline
     }
     .projectButton {
-        @apply text-gray-300 hover:text-[#64FFDA] hover:underline border-2 border-[#64FFDA] text-center p-2 text-sm sm:text-lg hover:shadow-black hover:shadow-lg
+        @apply text-gray-400 hover:text-[#64FFDA] hover:underline border-2 border-[#64FFDA] text-center p-2 text-xs sm:text-sm hover:shadow-black hover:shadow-lg
     }
     .projectTag {
-        @apply text-[#64FFDA] hover:underline text-center text-base underline-offset-4 underline shadow-md shadow-black
+        @apply text-[#64FFDA] text-xs sm:text-sm hover:underline text-center underline-offset-2 underline py-1
     }
 }
 

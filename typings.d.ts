@@ -15,6 +15,7 @@ interface Image {
 
 export interface Project extends SanityBody {
     title: string;
+    description: string;
     image: Image;
     summary: string;
     tags: string[];

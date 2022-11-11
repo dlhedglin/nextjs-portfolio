@@ -4,8 +4,15 @@ import Hero from "../components/Hero";
 import Particle from "../components/Particle";
 import Projects from "../components/Projects";
 import About from "../components/About";
+import { PageInfo } from "../typings";
+import { GetStaticProps } from "next";
+import { fetchPageInfo } from "../utils/fetchPageInfo";
 
-export default function Home() {
+type Props = {
+  pageInfo: PageInfo;
+};
+
+export default function Home(props: Props) {
   return (
     <div className="text-white h-screen overflow-y-auto snap-y snap-mandatory z-5 flex flex-col scroll-smooth bg-gray-800">
       <div className="particle overflow-y-hidden">{/* <Particle /> */}</div>
@@ -22,11 +29,24 @@ export default function Home() {
         <Hero />
       </section>
       <section id="about" className="snap-center">
-        <About />
+        <About
+          about={{
+            about: props.pageInfo.about,
+            aboutPic: props.pageInfo.aboutPic,
+          }}
+        />
       </section>
       <section id="projects" className="snap-center">
-        <Projects />
+        <Projects projects={props.pageInfo.projects} />
       </section>
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const pageInfo: PageInfo = await fetchPageInfo();
+  const data: Props = {
+    pageInfo: pageInfo,
+  };
+  return { props: { pageInfo }, revalidate: 15 };
+};

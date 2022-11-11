@@ -6,7 +6,8 @@ export default {
     {
       name: "about",
       title: "About",
-      type: "string"
+      type: "array",
+      of: [{ type: "string" }]
     },
     {
       name: "aboutPic",
