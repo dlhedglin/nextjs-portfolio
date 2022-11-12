@@ -8,17 +8,17 @@ type Props = {};
 
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: [" cd home", " cd resume", " cd projects"],
+    words: ["Software Engineer", "DevOps Engineer", "Cloud Engineer"],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 3000,
   });
 
   return (
     <div className="h-screen flex flex-col space-y-8 items-start justify-center z-20 px-10 sm:px-28 md:px-48 lg:px-96">
       <h2 className="customGreen text-lg sm:text-2xl">Hello, Im</h2>
-      <h2 className="text-4xl lg:text-6xl font-semibold ">Devan Hedglin</h2>
-      <h2 className="text-gray-400 text-lg sm:text-2xl uppercases tracking-[10px]">
-        DevOps/Cloud Engineer
+      <h2 className="text-4xl lg:text-7xl font-bold">Devan Hedglin</h2>
+      <h2 className="text-gray-400 text-lg sm:text-2xl uppercases">
+        {text} <Cursor cursorColor="#FFFFFF" cursorStyle="|" />
       </h2>
       <div>
         <SocialIcon

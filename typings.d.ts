@@ -17,14 +17,14 @@ export interface Project extends SanityBody {
     title: string;
     description: string;
     image: Image;
-    summary: string;
+    summary: string[];
     tags: string[];
     linkToCode: string;
 }
 
 export interface PageInfo extends SanityBody {
     _type: "pageInfo";
-    about: string;
+    about: string[];
     aboutPic: Image;
     projects: Project[];
 }

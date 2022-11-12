@@ -15,10 +15,13 @@
         @apply text-[#64FFDA]
     }
     .navButton {
-        @apply text-sm px-2 md:px-5 font-semibold uppercase hover:customGreen hover:underline focus:underline
+        @apply text-sm sm:text-base px-2 md:px-5 font-semibold uppercase hover:customGreen hover:underline focus:underline
     }
     .projectButton {
-        @apply text-gray-400 hover:text-[#64FFDA] hover:underline border-2 border-[#64FFDA] text-center p-2 text-xs sm:text-sm hover:shadow-black hover:shadow-lg
+        @apply text-gray-400 hover:text-[#64FFDA] hover:bg-[#64FFDA]/20 hover:underline border-2 border-[#64FFDA] text-center p-2 text-xs sm:text-sm
+    }
+    .projectButtonDisabled {
+        @apply text-gray-400 border-2 border-gray-400 text-center p-2 text-xs sm:text-sm
     }
     .projectTag {
         @apply text-[#64FFDA] text-xs sm:text-sm hover:underline text-center underline-offset-2 underline py-1

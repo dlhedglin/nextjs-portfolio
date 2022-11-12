@@ -4,10 +4,8 @@ import Particle from "../components/Particle";
 import ResumeProp from "../components/Resume";
 export default function Resume() {
   return (
-    <div className="text-white h-screen overflow-y-auto snap-y snap-mandatory z-5 flex flex-col scroll-smooth">
-      <div className="particle overflow-y-hidden">
-        <Particle />
-      </div>
+    <div className="text-white h-screen overflow-y-auto snap-y snap-mandatory z-5 flex flex-col scroll-smooth bg-gray-800">
+      <div className="particle overflow-y-hidden">{/* <Particle /> */}</div>
       <Head>
         <title>Devan Hedglin's Portfolio</title>
         <style>
