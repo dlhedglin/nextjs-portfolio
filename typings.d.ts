@@ -13,6 +13,15 @@ interface Image {
     }
 }
 
+export interface Resume extends SanityBody {
+    _type: "file"
+    asset: {
+        _ref: string;
+        _type: "reference"
+    },
+    imageUrl: string;
+}
+
 export interface Project extends SanityBody {
     title: string;
     description: string;
