@@ -22,7 +22,7 @@ const Projects = (props: Props) => {
       <div className="flex flex-col items-center space-y-2 sm:space-y-10">
         <div className="text-center p-2 sm:p-5 rounded-lg bg-gray-700 shadow-lg transition duration-500 hover:scale-105">
           <div className="skillsLevel">Proficient:</div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {props.skills.Proficient.map((skill: skillType) => (
               <Skill key={skill._id} skill={skill} />
             ))}
@@ -30,7 +30,7 @@ const Projects = (props: Props) => {
         </div>
         <div className="text-center p-2 sm:p-5 rounded-lg bg-gray-700 shadow-lg transition duration-500 hover:scale-105">
           <div className="skillsLevel">Competent:</div>
-          <div className="grid gap-4 grid-cols-2 sm:grid-cols-3">
+          <div className="grid gap-4 grid-cols-2 sm:grid-cols-4">
             {props.skills.Competent.map((skill: skillType) => (
               <Skill key={skill._id} skill={skill} />
             ))}
@@ -38,7 +38,7 @@ const Projects = (props: Props) => {
         </div>
         <div className="text-center p-2 sm:p-5 rounded-lg bg-gray-700 shadow-lg transition duration-500 hover:scale-105">
           <div className="skillsLevel">Novice:</div>
-          <div className="grid gap-4 grid-cols-2 sm:grid-cols-3">
+          <div className="grid gap-4 grid-cols-2 sm:grid-cols-4">
             {props.skills.Novice.map((skill: skillType) => (
               <Skill key={skill.tech} skill={skill} />
             ))}

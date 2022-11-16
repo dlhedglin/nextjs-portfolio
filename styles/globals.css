@@ -27,7 +27,7 @@
         @apply text-[#64FFDA] text-xs sm:text-sm hover:underline text-center underline-offset-2 underline py-1
     }
     .skillsLevel {
-        @apply text-gray-300 text-sm sm:text-xl font-bold pb-2 sm:pb-5
+        @apply text-gray-300 text-sm sm:text-lg font-bold pb-2 sm:pb-5
     }
 }
 
