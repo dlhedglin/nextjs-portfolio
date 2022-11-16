@@ -15,16 +15,19 @@
         @apply text-[#64FFDA]
     }
     .navButton {
-        @apply text-sm sm:text-base px-2 md:px-5 font-semibold uppercase hover:customGreen hover:underline focus:underline
+        @apply text-xs transition duration-500 hover:scale-110 sm:text-base px-1 md:px-5 font-semibold uppercase hover:customGreen hover:underline focus:underline
     }
     .projectButton {
-        @apply text-gray-400 hover:text-[#64FFDA] hover:bg-[#64FFDA]/20 hover:underline border-2 border-[#64FFDA] text-center p-2 text-xs sm:text-sm
+        @apply text-gray-400 hover:scale-125 duration-500 transition hover:text-[#64FFDA] hover:bg-[#64FFDA]/20 hover:underline border-2 border-[#64FFDA] text-center p-2 text-xs sm:text-sm
     }
     .projectButtonDisabled {
         @apply text-gray-400 border-2 border-gray-400 text-center p-2 text-xs sm:text-sm
     }
     .projectTag {
         @apply text-[#64FFDA] text-xs sm:text-sm hover:underline text-center underline-offset-2 underline py-1
+    }
+    .skillsLevel {
+        @apply text-gray-300 text-sm sm:text-xl font-bold pb-2 sm:pb-5
     }
 }
 

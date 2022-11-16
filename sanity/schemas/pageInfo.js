@@ -18,6 +18,24 @@ export default {
       }
     },
     {
+      name: "skillsNovice",
+      title: "SkillsNovice",
+      type: "array",
+      of: [{ type: "reference", to: { type: "skill" } }]
+    },
+    {
+      name: "skillsCompetent",
+      title: "skillsCompetent",
+      type: "array",
+      of: [{ type: "reference", to: { type: "skill" } }]
+    },
+    {
+      name: "skillsProficient",
+      title: "SkillsProficient",
+      type: "array",
+      of: [{ type: "reference", to: { type: "skill" } }]
+    },
+    {
       name: "projects",
       title: "Projects",
       type: "array",

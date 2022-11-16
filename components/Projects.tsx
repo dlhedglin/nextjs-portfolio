@@ -18,7 +18,7 @@ const Projects = (props: Props) => {
           className="w-full shrink-0 flex flex-col snap-center"
         >
           <div className="h-full flex flex-col rounded-lg items-center justify-start">
-            <div className="h-1/2 w-full sm:w-2/3 overflow-hidden relative">
+            <div className="h-1/2 w-full sm:w-2/3 overflow-hidden relative transition duration-500 hover:scale-105">
               <Image
                 src={urlFor(project.image).url()}
                 alt="image"

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Particle from "../components/Particle";
+import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import { PageInfo } from "../typings";
@@ -33,6 +34,15 @@ export default function Home(props: Props) {
           about={{
             about: props.pageInfo.about,
             aboutPic: props.pageInfo.aboutPic,
+          }}
+        />
+      </section>
+      <section id="skills" className="snap-center">
+        <Skills
+          skills={{
+            Proficient: props.pageInfo.skillsProficient,
+            Novice: props.pageInfo.skillsNovice,
+            Competent: props.pageInfo.skillsCompetent,
           }}
         />
       </section>

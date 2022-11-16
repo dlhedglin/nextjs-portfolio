@@ -6,7 +6,10 @@ import { PageInfo } from '../../typings'
 const query = groq`
     *[_type == "pageInfo"]{
         ...,
-        projects[]->
+        projects[]->,
+        skillsNovice[]->,
+        skillsCompetent[]->,
+        skillsProficient[]->
     }
 `;
 

@@ -32,7 +32,7 @@ function Hero({}: Props) {
           bgColor="transparent"
         />
         <SocialIcon
-          url="devan.hedglin@gmail.com"
+          url="mailto:devan.hedglin@gmail.com"
           fgColor="gray"
           bgColor="transparent"
           network="email"

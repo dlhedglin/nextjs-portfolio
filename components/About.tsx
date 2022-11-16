@@ -42,7 +42,7 @@ const About = (props: Props) => {
         </h1>
         <div className="overflow-y-auto">
           {props.about.about.map((text) => (
-            <p key={text} className="text-xs sm:text-lg  text-gray-400 py-2">
+            <p key={text} className="text-xs sm:text-lg  text-gray-300 py-2">
               {text}
             </p>
           ))}

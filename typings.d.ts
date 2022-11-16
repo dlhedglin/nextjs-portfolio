@@ -22,6 +22,11 @@ export interface Resume extends SanityBody {
     imageUrl: string;
 }
 
+export interface Skill extends SanityBody {
+    image: Image;
+    tech: string
+}
+
 export interface Project extends SanityBody {
     title: string;
     description: string;
@@ -36,4 +41,7 @@ export interface PageInfo extends SanityBody {
     about: string[];
     aboutPic: Image;
     projects: Project[];
+    skillsNovice: Skill[];
+    skillsProficient: Skill[];
+    skillsCompetent: Skill[];
 }
