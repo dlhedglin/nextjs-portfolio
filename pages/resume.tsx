@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { GetStaticProps } from "next";
 import Header from "../components/Header";
-import Particle from "../components/Particle";
 import ResumeProp from "../components/Resume";
 import { Resume as resumeType } from "../typings";
 import { fetchResume } from "../utils/fetchResume";
@@ -13,7 +12,6 @@ type Props = {
 export default function Resume(props: Props) {
   return (
     <div className="text-white h-screen overflow-y-auto snap-y snap-mandatory z-5 flex flex-col scroll-smooth bg-gray-800">
-      <div className="particle overflow-y-hidden">{/* <Particle /> */}</div>
       <Head>
         <title>Devans Portfolio</title>
         <style>
