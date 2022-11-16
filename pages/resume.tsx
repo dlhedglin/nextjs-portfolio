@@ -17,8 +17,8 @@ export default function Resume(props: Props) {
       <Head>
         <title>Devans Portfolio</title>
         <style>
-          @import // eslint-disable-next-line react/no-unescaped-entities
-          url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+          @import
+          url(&apos;https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap&apos;);
         </style>
       </Head>
       <Header />
