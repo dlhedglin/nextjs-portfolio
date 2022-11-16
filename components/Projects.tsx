@@ -28,9 +28,9 @@ const Projects = (props: Props) => {
               />
             </div>
             <div className="h-1/2 w-full sm:w-2/3 flex flex-col px-5 sm:px-0 pt-5">
-              <div className="pb-2 text-base sm:text-lg font-bold customGreen">
+              <div className="pb-2 text-sm sm:text-lg font-bold customGreen">
                 {project.title}{" "}
-                <span className="pb-2 text-sm sm:text-base font-bold text-gray-300">
+                <span className="pb-2 text-xs sm:text-base text-gray-300">
                   - {project.description}
                 </span>
               </div>
