@@ -15,9 +15,9 @@ export default function Resume(props: Props) {
     <div className="text-white h-screen overflow-y-auto snap-y snap-mandatory z-5 flex flex-col scroll-smooth bg-gray-800">
       <div className="particle overflow-y-hidden">{/* <Particle /> */}</div>
       <Head>
-        <title>Devan Hedglin's Portfolio</title>
+        <title>Devans Portfolio</title>
         <style>
-          @import
+          @import // eslint-disable-next-line react/no-unescaped-entities
           url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
         </style>
       </Head>
